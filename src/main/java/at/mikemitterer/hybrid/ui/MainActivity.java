@@ -48,8 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
-
     }
 
 
@@ -117,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             //});
 
             webView.addJavascriptInterface(new WebAppInterface(getContext()), "Android");
-            webView.loadUrl("file:///android_asset/index.html");
+            webView.loadUrl("file:///android_asset/build/web/index.html");
 
             WebSettings webSettings = webView.getSettings();
             webSettings.setJavaScriptEnabled(true);
