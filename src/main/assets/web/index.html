@@ -73,7 +73,8 @@
                             </button>
                         </div>
                         <div class="demo-button">Raised:
-                            <button id="maketoast" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                            <button id="maketoast"
+                                    class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
                                 Make TOAST
                             </button>
                         </div>
@@ -124,6 +125,15 @@
 
 <script type="application/dart" src="main.dart"></script>
 <script data-pub-inline src="packages/browser/dart.js"></script>
+<script type="text/javascript">
+    function fireEvent(json) {
+        var customEvent = new CustomEvent("JsToDartEvent", {
+            detail: json
+        });
+
+        document.dispatchEvent(customEvent);
+    }
+</script>
 
 </body>
 </html>

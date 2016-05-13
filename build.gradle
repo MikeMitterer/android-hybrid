@@ -44,6 +44,16 @@ dependencies {
 
     compile group: 'com.android.support', name: 'multidex', version: androidMultiDex
 
+    // Logging
+    compile group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
+    compile group: 'com.github.tony19', name: 'logback-android-core', version: logbackAndroidVersion
+    compile(group: 'com.github.tony19', name: 'logback-android-classic', version: logbackAndroidVersion) {
+        // workaround issue #73
+        exclude group: 'com.google.android', module: 'android'
+    }
+
     // Test ------------------------------------------------------------------------------------------------------------
     testCompile group: 'junit', name: 'junit', version: junitVersion
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
 }
