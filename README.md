@@ -23,9 +23,10 @@ the moment it could be an option for someone.
 **Remark:** The most promising Flutter sample: [hello_android](https://github.com/flutter/flutter/tree/master/examples/hello_android) 
 
 ## MDL4Dart
-[WebSite](http://www.material-design-lite.pub/)
-[KitchenSink](http://styleguide.material-design-lite.pub/#/)
-[Samples](http://styleguide.material-design-lite.pub/#/samples)
+
+- [WebSite](http://www.material-design-lite.pub/)
+- [KitchenSink](http://styleguide.material-design-lite.pub/#/)
+- [Samples](http://styleguide.material-design-lite.pub/#/samples)
 
 ###License###
 
